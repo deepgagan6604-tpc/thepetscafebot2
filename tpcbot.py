@@ -1,6 +1,6 @@
 import os
-from flask import flask, request, jsonify
-app = flask(__name__)
+from flask import Flask, request, jsonify
+app = Flask(__name__)
 user_sessions = {}
 
 MENU = {
