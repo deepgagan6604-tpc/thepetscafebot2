@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: petscafe-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python tpcbot.py"
+    plan: free
