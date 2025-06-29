@@ -1,6 +1,6 @@
-from flask import ABC, request, jsonify
+from flask import flask, request, jsonify
 import os
-app = ABC(__name__)
+app = flask(__name__)
 user_sessions = {}
 
 MENU = {
@@ -123,4 +123,4 @@ def whatsapp_bot():
 # Run the Flask app
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='localhost', port=port, debug=True)
