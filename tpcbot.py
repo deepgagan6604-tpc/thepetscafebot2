@@ -1,6 +1,4 @@
-from flask import Flask, request, jsonify
 import os
-
 app = Flask(__name__)
 
 user_sessions = {}
